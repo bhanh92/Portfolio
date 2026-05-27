@@ -1,0 +1,135 @@
+.experience {
+  position: relative;
+}
+
+.timeline {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.timeline-line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: var(--gradient-primary);
+  transform: translateX(-50%);
+  border-radius: 3px;
+}
+
+.timeline-item {
+  position: relative;
+  width: 50%;
+  padding: 1.5rem 2.5rem;
+  opacity: 0;
+  transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.timeline-item.left {
+  left: 0;
+  text-align: right;
+  transform: translateX(-30px);
+}
+
+.timeline-item.right {
+  left: 50%;
+  text-align: left;
+  transform: translateX(30px);
+}
+
+.timeline-item.reveal {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Dot on timeline */
+.timeline-item::after {
+  content: '';
+  position: absolute;
+  top: 2.2rem;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--gradient-primary);
+  border: 3px solid var(--bg-color);
+  z-index: 1;
+}
+
+.timeline-item.left::after {
+  right: -8px;
+}
+
+.timeline-item.right::after {
+  left: -8px;
+}
+
+.timeline-content {
+  padding: 2rem;
+  border-radius: 16px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-content:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(255, 117, 140, 0.2);
+}
+
+.timeline-year {
+  display: inline-block;
+  padding: 4px 14px;
+  background: var(--gradient-primary);
+  color: white;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.timeline-content h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-content h4 {
+  font-size: 1rem;
+  color: var(--accent-1);
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+
+.timeline-content p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+  .timeline-line {
+    left: 20px;
+  }
+
+  .timeline-item {
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 1rem;
+  }
+
+  .timeline-item.left,
+  .timeline-item.right {
+    left: 0;
+    text-align: left;
+    transform: translateY(20px);
+  }
+
+  .timeline-item.reveal {
+    transform: translateY(0);
+  }
+
+  .timeline-item.left::after,
+  .timeline-item.right::after {
+    left: 12px;
+    right: auto;
+  }
+}

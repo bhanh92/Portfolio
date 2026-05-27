@@ -144,3 +144,20 @@ section {
   margin-bottom: 3rem;
   text-align: center;
 }
+
+/* Scroll Reveal */
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.scroll-reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+section {
+  position: relative;
+  z-index: 1;
+}
