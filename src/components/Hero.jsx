@@ -4,7 +4,7 @@ import { useTypingEffect } from '../hooks/useAnimations';
 
 const Hero = () => {
   const typedText = useTypingEffect([
-    'Front-End Developer',
+    'Full-Stack Developer',
     'UI/UX Enthusiast',
     'Người yêu công nghệ',
   ], 80, 50, 2000);

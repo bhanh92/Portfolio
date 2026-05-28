@@ -5,7 +5,7 @@ import { useInView } from '../hooks/useAnimations';
 const experienceData = [
   {
     year: '2023 - Hiện tại',
-    title: 'Front-End Developer',
+    title: 'Full-Stack Developer',
     place: 'Sinh viên năm 3 - Đại học',
     desc: 'Tập trung phát triển kỹ năng lập trình web, tham gia các dự án thực tế với nhóm và xây dựng portfolio cá nhân.',
   },

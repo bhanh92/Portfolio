@@ -15,7 +15,7 @@ const About = () => {
           <ScrollReveal>
             <div className="about-text glass">
               <p>
-                Tôi là một Front-End Developer với niềm đam mê mãnh liệt trong việc tạo ra các giao diện web tối ưu, 
+                Tôi là một Full-Stack Developer với niềm đam mê mãnh liệt trong việc tạo ra các giao diện web tối ưu, 
                 đẹp mắt và mang lại trải nghiệm xuất sắc cho người dùng.
               </p>
               <p>

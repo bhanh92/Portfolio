@@ -1,4 +1,4 @@
-# 🌸 Bùi Hoài Anh - Front-End Developer Portfolio
+# 🌸 Bùi Hoài Anh - Full-Stack Developer Portfolio
 
 Chào mừng bạn đến với kho lưu trữ mã nguồn trang Portfolio cá nhân của **Bùi Hoài Anh**! Đây là một trang web giới thiệu bản thân hiện đại, trẻ trung và tràn đầy năng lượng, được thiết kế theo phong cách Light Mode (Hồng phấn dễ thương) dành riêng cho các bạn học ngành Công nghệ thông tin muốn thể hiện cá tính riêng.
 
